@@ -201,7 +201,7 @@ export default function CalendarView() {
 
       <Dialog
         fullWidth
-        maxWidth="xs"
+        maxWidth="sm"
         open={openForm}
         onClose={onCloseForm}
         transitionDuration={{

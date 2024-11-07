@@ -63,6 +63,11 @@ export function useNavData() {
             icon: ICONS.dashboard,
           },
           {
+            title: t('components'),
+            path: paths.dashboard.components,
+            icon: ICONS.dashboard,
+          },
+          {
             title: t('ecommerce'),
             path: paths.dashboard.general.ecommerce,
             icon: ICONS.ecommerce,

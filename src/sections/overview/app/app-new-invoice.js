@@ -102,8 +102,7 @@ function AppNewInvoiceRow({ row }) {
           <Label
             variant="soft"
             color={
-              (row.status === 'progress' && 'warning') ||
-              (row.status === 'out of date' && 'error') ||
+              (row.status === 'inactive' && 'error') ||
               'success'
             }
           >
@@ -111,10 +110,15 @@ function AppNewInvoiceRow({ row }) {
           </Label>
         </TableCell>
 
-        <TableCell align="right" sx={{ pr: 1 }}>
-          <IconButton color={popover.open ? 'inherit' : 'default'} onClick={popover.onOpen}>
+        <TableCell align="left" sx={{ pr: 1 }}>
+          {/* <IconButton color={popover.open ? 'inherit' : 'default'} onClick={popover.onOpen}>
             <Iconify icon="eva:more-vertical-fill" />
+          </IconButton> */}
+          <IconButton color={popover.open ? 'inherit' : 'default'} onClick={popover.onOpen}>
+            <Iconify icon="lucide:edit" />
           </IconButton>
+
+
         </TableCell>
       </TableRow>
 
